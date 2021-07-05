@@ -4,10 +4,10 @@ Sentry.init({
 });
 
 const ROUTES = [
-  { path: '/a', entrypoint: '/a.js' },
-  { path: '/b', entrypoint: '/b.js' },
-  { path: '/c', entrypoint: '/c.js' },
-  { path: '/d', entrypoint: '/d.js' },
+  { path: '/a', entrypoint: '/pages/a.js' },
+  { path: '/b', entrypoint: '/pages/b.js' },
+  { path: '/c', entrypoint: '/pages/c.js' },
+  { path: '/d', entrypoint: '/pages/d.js' },
 ];
 
 const params = new URLSearchParams(new URL(location).search);
