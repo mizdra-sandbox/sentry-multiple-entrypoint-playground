@@ -17,3 +17,5 @@ const route = ROUTES.find((route) => route.path === path);
 if (route) {
   import(route.entrypoint).then(({ entrypoint }) => entrypoint());
 }
+
+throw new Error("this is error in page's entrypoint");
