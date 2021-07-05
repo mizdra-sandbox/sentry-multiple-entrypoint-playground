@@ -18,4 +18,6 @@ if (route) {
   import(route.entrypoint).then(({ entrypoint }) => entrypoint());
 }
 
-throw new Error("this is error in page's entrypoint");
+(() => {
+  throw new Error("this is error in page's entrypoint");
+})();
